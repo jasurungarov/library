@@ -41,6 +41,9 @@ const Navbar: React.FC = () => {
               <Link to="/search" className={`transition duration-200 ${isActive('/search')}`}>
                 Qidirish
               </Link>
+              <Link to="/adabiyotlar" className={`transition duration-200 ${isActive('/adabiyotlar')}`}>
+                Adabiyotlar
+              </Link>
             </div>
           </div>
           
@@ -86,6 +89,13 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
             >
               Qidirish
+            </Link>
+            <Link 
+              to="/adabiyotlar" 
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/adabiyotlar')}`}
+              onClick={closeMenu}
+            >
+              Adabiyotlar
             </Link>
           </div>
         </div>

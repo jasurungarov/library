@@ -7,6 +7,7 @@ import Search from './pages/Search';
 import BookDetails from './pages/BookDetails';
 import Footer from './components/Footer';
 import { LibraryProvider } from './context/LibraryContext';
+import Adabiyotlar from './pages/Adabiyotlar';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/genres" element={<Genres />} />
               <Route path="/genres/:genre" element={<Genres />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/adabiyotlar" element={<Adabiyotlar />} />
               <Route path="/book/:id" element={<BookDetails />} />
             </Routes>
           </main>
